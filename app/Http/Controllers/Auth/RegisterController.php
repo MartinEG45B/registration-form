@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use App\User;
+use App\Userdetail;
+use DateTime;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -44,30 +45,42 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'username' => ['required', 'string', 'max:20'],
+            'password' => ['required', 'string', 'min:5', 'max:20', 'confirmed'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:userdetails'],
+            'url' => ['nullable', 'url'], //nullable since laravel converts blank fields to null
+            'dob' => ['required', function ($attribute, $value, $fail) {
+            $current_date = new DateTime(date('Y-m-d'));
+            $dob = new DateTime($value);
+            $age = $current_date->diff($dob)->y;
+            if($age < 18){
+                $fail('You must be over 18 to register');
+            }
+            }],
         ]);
     }
 
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
-     * @return \App\User
+     * @param array $data
+     * @return \App\Userdetail
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+
+        return Userdetail::create([
+            'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'url' => $data['url'],
+            'dob' => $data['dob']
         ]);
     }
 }
