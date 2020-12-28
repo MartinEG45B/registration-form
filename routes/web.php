@@ -39,3 +39,4 @@ Route::resource('secure-pages','securePageController')
         'destroy'
     ]
 );
+//->middleware('clickjacking')
