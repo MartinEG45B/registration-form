@@ -17,11 +17,7 @@ use Illuminate\Support\Facades\Auth;
 //    return view('welcome');
 //});
 Route::get('/', function () {
-    if(Auth::check()){
-        return redirect(route('home'));
-    }else{
-        return redirect(route('register'));
-    }
+    return redirect(route('register'));
 });
 
 Auth::routes();
@@ -39,4 +35,3 @@ Route::resource('secure-pages','securePageController')
         'destroy'
     ]
 );
-//->middleware('clickjacking')

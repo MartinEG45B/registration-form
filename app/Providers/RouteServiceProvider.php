@@ -34,7 +34,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/home';
-    public const SECURE_PAGE = '/secure-pages';
+    public const REGISTER = '/register';
     /**
      * Define the routes for the application.
      *

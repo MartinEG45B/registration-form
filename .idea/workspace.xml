@@ -23,8 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +158,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Wk7/Tutorial/LaravelTutorial" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -204,6 +205,12 @@
       <workItem from="1609009153048" duration="5927000" />
       <workItem from="1609037500401" duration="1253000" />
       <workItem from="1609108606098" duration="8976000" />
+      <workItem from="1609121828533" duration="205000" />
+      <workItem from="1609123446228" duration="618000" />
+      <workItem from="1609156782703" duration="5738000" />
+      <workItem from="1609188132860" duration="6824000" />
+      <workItem from="1609201522357" duration="268000" />
+      <workItem from="1609202693513" duration="406000" />
     </task>
     <servers />
   </component>
@@ -231,10 +238,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1608926502220" />
-    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1609037248416">
+    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1609198351156">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1609037248416" />
+    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1609198351156" />
     <state x="825" y="463" key="NewPhpFileDialog" timestamp="1608833052033">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -247,9 +254,9 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1608645932503" />
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1609121300638">
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1609202849808">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1609121300638" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1609202849808" />
   </component>
 </project>
